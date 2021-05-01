@@ -17,8 +17,8 @@ import pandas as pd
 """
 Generating array from best match catalogue
 """
-file=open(r"C:\Users\kille\OneDrive\Desktop\Institute Of Astronomy\Project32 Characterising PNe\EDR3 Files\GAIAArchiveEDR3_HashPN_Xmatch_ReducedCol_TEST.csv", 'r')
-file_pd = open(r"C:\Users\kille\OneDrive\Desktop\Institute Of Astronomy\Project32 Characterising PNe\EDR3 Files\GAIAArchiveEDR3_HashPN_Xmatch_ReducedCol_TEST.csv", 'r')
+file=open(r"INPUT_CROSSMATCH_FILE", 'r')
+file_pd = open(r"INPUT_CROSSMATCH_FILE", 'r')
 
 """
 Retaining column names and finding column indices
@@ -111,4 +111,4 @@ Final = Final.reshape((len(Final),ind2 + 1))
 Final = pd.DataFrame(data=Final, columns=column)
 print(Final)
 
-Final.to_csv(r"C:\Users\kille\OneDrive\Desktop\Institute Of Astronomy\Project32 Characterising PNe\Best PN ratio files\BestPN_Presen_HighG.csv", index=False)
+Final.to_csv(r"FINAL_CATALOGUE_OUTPUT", index=False)
