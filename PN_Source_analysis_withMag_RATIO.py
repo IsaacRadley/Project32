@@ -77,7 +77,7 @@ def Analysis(x):
     
     
     """
-    Analyse the colour information, look for the bluest source within the 
+    Analyse the astrometric and photometric data within the 
     pn + 2 cut above.
     
     """
